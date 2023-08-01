@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
+@import 'vars-custom-properties';
+
 @import
   'vendors/reset';
 
 @import
-//   'base/fonts',
+  'base/fonts',
 //   'base/typography',
   'base/helpers';
 
