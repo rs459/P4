@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --third-color: #99E2D0;
+  --text-color: #000;
+  --text-color-secondary: #FFF;
+  --text-color-third: #008766;
+  --text-color-fourth: #353535;
+  --bg-color: #FFF;
+  --bg-color-secondary: #F6F6F6;
+  --bg-color-third: #353535;
+  --bg-color-fourth: #EAEAEA;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Improve text rendering
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  4. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  5. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  6. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9zY3NzL192YXJzLWN1c3RvbS1wcm9wZXJ0aWVzLnNjc3MiLCIuLi90ZW1wL3N0eWxlLmNzcyIsIi4uL3NyYy9zY3NzL3ZlbmRvcnMvX3Jlc2V0LnNjc3MiLCIuLi9zcmMvc2Nzcy9iYXNlL19mb250cy5zY3NzIiwiLi4vc3JjL3Njc3MvYmFzZS9faGVscGVycy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksd0JBQUE7RUFDQSwwQkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSw0QkFBQTtFQUNBLDJCQUFBO0VBQ0EsNEJBQUE7RUFDQSxnQkFBQTtFQUNBLDZCQUFBO0VBQ0EseUJBQUE7RUFDQSwwQkFBQTtBQ0NKOztBQ1ZBOztDQUFBO0FBR0E7RUFDRSw4QkFBQTtVQUFBLHNCQUFBO0FEYUY7O0FDWEE7O0NBQUE7QUFHQTtFQUNFLFNBQUE7QURjRjs7QUNaQTs7O0NBQUE7QUFJQTtFQUNFLG1DQUFBO0FEZUY7O0FDYkE7O0NBQUE7QUFHQTtFQUNFLGNBQUE7RUFDQSxlQUFBO0FEZ0JGOztBQ2RBOztDQUFBO0FBR0E7RUFDRSxhQUFBO0FEaUJGOztBQ2ZBOztDQUFBO0FBR0E7RUFDRSx5QkFBQTtBRGtCRjs7QUV4REE7RUFDSSx3QkFBQTtFQUNBLGlDQUFBO0FGMkRKOztBRzdEQTtFQUNJLFNBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSxVQUFBO0FIZ0VKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

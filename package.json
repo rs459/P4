@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "trouvez votre resto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w src/scss/style.scss temp/style.css",
+    "prefix": "npx postcss temp/*.css --use autoprefixer -d build/ -w",
+    "watch": "concurrently 'npm:sass' 'npm:prefix'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0"
+  },
+  "browserslist": "Last 50 versions"
+}
