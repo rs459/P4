@@ -1,0 +1,123 @@
+body {
+    position: relative;
+    z-index: 1;
+}
+
+.location-bar {
+    z-index: 1;
+    text-align: center;
+    background-color: var(--bg-color-fourth);
+    padding-block: 16px;
+
+    i {
+        padding-right: 17px;
+    }
+}
+
+.hero-section {
+    text-align: center;
+    background-color: var(--bg-color-secondary);
+    padding-top: 37px;
+    padding-bottom: 57px;
+    padding-inline: 34px;
+    
+    &__title {
+        font-size: clamp(1.50rem, calc(1.15rem + 1.74vw), 2.50rem);
+        padding-bottom: 18px;
+    }
+    
+    &__subtitle {
+        font-weight: 300;
+        font-size: 1.125rem;
+        padding-bottom: 35px;
+    }
+}
+
+.container-limit-width {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.container_fonctionnement {
+    padding: 48px 20px 68px 20px;
+
+    h2 {
+        padding-bottom: 28px;
+    }
+
+    ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        li {
+            width: 31.78%;
+        }
+    }
+
+        li {
+            
+            background-color: var(--bg-color-secondary);
+            position: relative;
+            counter-increment: listCounter;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            padding: 28px;
+            margin: 19px 0;
+            border-radius: 20px;
+            margin-bottom: 29px;
+            i {
+                padding-right: 20px;
+                color: #7E7E7E;
+                font-size: 1.25rem;
+                &.fa-store {
+                    color: var(--primary-color);
+                }
+            }
+            &::before {
+                font-size: 0.875rem;
+                color: var(--text-color-secondary);
+                background: var(--primary-color);
+                position: absolute;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                left: -9px;
+                text-align: center;
+                content: counter(listCounter);
+            }
+        }
+    }
+}
+
+#restaurants {
+    background-color: var(--bg-color-fourth);
+    padding: 54px 18px 68px 18px;
+
+    h2 {
+        padding-bottom: 26px;
+    }
+
+    .c-card {
+        margin-bottom: 18px;
+    }
+
+    .container_c-card {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 806px) {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+            .c-card {
+                width: 45%;
+                margin-bottom: 50px;
+            }
+        }
+    }      
+}

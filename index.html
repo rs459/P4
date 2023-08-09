@@ -1,19 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OhMyFood trouvez votre restaurant et commandez les plats que vous souhaitez">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OhMyFood trouvez votre restaurant et commandez les plats que vous souhaitez"
+    />
     <title>OhMyFood - Trouvez votre restaurant</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <link rel="stylesheet" href="/build/style.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="build/style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader__container">
+        <p class="h1-like">Ohmyfood</p>
+        <p>Commandez ce qu'il vous plaît !</p>
+        <p class="my-loader"></p>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <h1>ohmyfood</h1>
+    </header>
+    <main>
+      <div class="location-bar">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        Paris, Belleville
+      </div>
+      <div class="hero-section">
+        <h2 class="hero-section__title">Réservez le menu qui vous convient</h2>
+        <p class="hero-section__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <a href="#restaurants" class="c-button">Explorer nos restaurants</a>
+      </div>
+      <div class="container_fonctionnement">
+        <div class="container-limit-width">
+          <h2>Fonctionnement</h2>
+          <ol>
+            <li><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Choisissez un restaurant</li>
+            <li><i class="fa-solid fa-list-ul" aria-hidden="true"></i>Composez votre menu</li>
+            <li><i class="fa-solid fa-store" aria-hidden="true"></i>Dégustez au restaurant</li>
+          </ol>
+        </div>
+      </div>
+      <div id="restaurants" class="restaurants">
+        <div class="container-limit-width">
+          <h2>Restaurants</h2>
+          <div class="container_c-card">
+            <div class="c-card">
+                <span class="c-card__badge c-badge">
+                    Nouveau
+                </span>
+                <img class="c-card__img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                <div class="c-card__text">
+                    <div class="c-card__text__container">
+                        <h3 class="c-card__text__title" id="c-card__text__title1">
+                            <a href="restaurants/La_palette_du_gout.html">La palette du goût</a>
+                        </h3>
+                        <p class="c-card__text__subtitle">Ménilmontant</p>
+                    </div>
+                    <div class="c-like">
+                        <input type="checkbox" id="like-button1" class="visually-hidden" aria-describedby="c-card__text__title1"/>
+                        <label for="like-button1">
+                          <span class="visually-hidden">Mettre en favoris</span> 
+                          <i class="fa-heart fa-regular" aria-hidden="true"></i>
+                          <i class="fa-heart fa-solid" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="c-card">
+                <span class="c-card__badge c-badge">
+                    Nouveau
+                </span>
+                <img class="c-card__img" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                <div class="c-card__text">
+                    <div class="c-card__text__container">
+                        <h3 class="c-card__text__title" id="c-card__text__title2">
+                            <a href="restaurants/La_note_enchantee.html">La note enchantée</a>
+                        </h3>
+                        <p class="c-card__text__subtitle">Charonne</p>
+                    </div>
+                    <div class="c-like">
+                        <input type="checkbox" id="like-button2" class="visually-hidden" aria-describedby="c-card__text__title2"/>
+                        <label for="like-button2">
+                          <span class="visually-hidden">Mettre en favoris</span> 
+                          <i class="fa-heart fa-regular" aria-hidden="true"></i>
+                          <i class="fa-heart fa-solid" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="c-card">
+                <img class="c-card__img" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                <div class="c-card__text">
+                    <div class="c-card__text__container">
+                        <h3 class="c-card__text__title" id="c-card__text__title3">
+                            <a href="restaurants/A_la_francaise.html">À la française</a>
+                        </h3>
+                        <p class="c-card__text__subtitle">Cité Rouge</p>
+                    </div>
+                    <div class="c-like">
+                        <input type="checkbox" id="like-button3" class="visually-hidden" aria-describedby="c-card__text__title3"/>
+                        <label for="like-button3">
+                          <span class="visually-hidden">Mettre en favoris</span> 
+                          <i class="fa-heart fa-regular" aria-hidden="true"></i>
+                          <i class="fa-heart fa-solid" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="c-card">
+              <img class="c-card__img" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+              <div class="c-card__text">
+                  <div class="c-card__text__container">
+                      <h3 class="c-card__text__title" id="c-card__text__title4">
+                          <a href="restaurants/Le_delice_des_sens.html">Le délice des sens</a>
+                      </h3>
+                      <p class="c-card__text__subtitle">Folie-Méricourt</p>
+                  </div>
+                  <div class="c-like">
+                      <input type="checkbox" id="like-button4" class="visually-hidden" aria-describedby="c-card__text__title4"/>
+                      <label for="like-button4">
+                        <span class="visually-hidden">Mettre en favoris</span> 
+                        <i class="fa-heart fa-regular" aria-hidden="true"></i>
+                        <i class="fa-heart fa-solid" aria-hidden="true"></i>
+                      </label>
+                  </div>
+              </div>
+
+            </div>     
+          </div>
+      </div>
+      </div>
+  </main>
+  <footer class="main-footer">
+    <h2 class="main-footer__title">ohmyfood</h2>
+    <ul class="main-footer__list">
+      <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"></i>Proposer un restaurant</a></li>
+      <li><a href="#"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>Devenir partenaire</a></li>
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="mailto:contact@ohmyfood.tld">Contact</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
