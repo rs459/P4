@@ -1,29 +1,30 @@
 @charset "UTF-8";
 
-@import 'vars-custom-properties';
+@import
+'vendors/reset';
 
 @import
-  'vendors/reset';
-
-@import
-  'base/fonts',
-//   'base/typography',
-  'base/helpers';
+'base/fonts',
+'base/vars-custom-properties',
+'base/helpers';
 
 // Layout-related sections
-// @import 
-//  'layout/header',
-//  'layout/footer';
+@import 
+ 'layout/header',
+ 'layout/footer';
 
 // Components
-// @import
-//   'components/c-loader',
-//   'components/c-button',
-//   'components/c-badge',
-//   'components/c-like',
-//   'components/c-card',
-//   'components/c-card-menu';
+@import
+  'components/c-loader',
+  'components/c-button',
+  'components/c-badge',
+  'components/c-like',
+  'components/c-card',
+  'components/c-card-menu';
 
 // Page-specific styles
-// @import
-//   'pages/home';
+@import
+  'pages/home',
+  'pages/restaurant';
+
+

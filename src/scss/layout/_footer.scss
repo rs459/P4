@@ -1,0 +1,55 @@
+.main-footer {
+    background: var(--bg-color-third);
+    color: var(--text-color-secondary);
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 806px) {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            li {
+                padding-right: 16px;
+                &:nth-child(2),
+                &:nth-child(4) {
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-family: Shrikhand;
+        font-size: 1.125rem;
+        padding-bottom: 16px;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding-bottom: 7px;
+        }
+
+        a {
+            color: var(--text-color-secondary);
+            text-decoration: none;
+
+            &:is(:hover, :focus){
+                text-decoration: underline;
+            }
+
+            i.fa-solid {
+                margin-right: 10px;
+            }
+
+            i.fa-handshake-angle {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}

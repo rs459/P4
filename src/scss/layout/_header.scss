@@ -1,0 +1,22 @@
+.main-header {
+    z-index: 2;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 14px 0 5px 0;
+    padding-block: clamp(0.88rem, calc(0.53rem + 1.74vw), 1.88rem);
+    text-align: center;
+    position: relative;
+
+    h1, .h1-like {
+        font-size: clamp(1.88rem, calc(1.79rem + 0.43vw), 2.13rem);
+        font-family: Shrikhand;
+    }
+
+    a {
+        position: absolute;
+        left: 23px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}

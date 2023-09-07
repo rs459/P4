@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OhMyFood trouvez votre restaurant et commandez les plats que vous souhaitez"
+    />
+    <title>OhMyFood - Trouvez votre restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="build/style.css" />
+  </head>
+  <body>
+    
+    <div class="loader">
+      <div class="loader__container">
+        <p class="h1-like">Ohmyfood</p>
+        <p>Commandez ce qu'il vous plaît !</p>
+      </div>
+    </div>
+    
+    <header class="main-header">
+      <h1>ohmyfood</h1>
+    </header>
+
+    <div class="container_c-like">
+      <h1 id="restaurant-title">Le délice des sens</h1>
+      <div class="c-like">
+        <input type="checkbox" id="like-button" class="visually-hidden" aria-describedby="restaurant-title"/>
+        <label for="like-button">
+          <span class="visually-hidden">Mettre en favoris</span> 
+          <i class="fa-heart fa-regular" aria-hidden="true"></i>
+          <i class="fa-heart fa-solid" aria-hidden="true"></i>
+        </label>
+      </div>
+    </div>
+    
+    <div class="menu">
+    <div class="restaurant__group-menu" role="group" aria-labelledby="entries">
+          <h2 id="entries">ENTRÉES</h2>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox"
+              aria-labelledby="chklabel"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox"></label>
+            <div class="c-card-menu__fake-label" id="chklabel">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Œuf au plat</h3>
+                <p class="c-card-menu__subtitle">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+                <p class="c-card-menu__price">20€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox1"
+              aria-labelledby="chklabel1"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox1"></label>
+            <div class="c-card-menu__fake-label" id="chklabel1">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Foie gras de canard mi-cuit</h3>
+                <p class="c-card-menu__subtitle">Et ses copeaux de truffe noire</p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox2"
+              aria-labelledby="chklabel2"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox2"></label>
+            <div class="c-card-menu__fake-label" id="chklabel2">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Foie gras de canard mi-cuit</h3>
+                <p class="c-card-menu__subtitle">Et ses copeaux de truffe noire</p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox3"
+              aria-labelledby="chklabel3"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox3"></label>
+            <div class="c-card-menu__fake-label" id="chklabel3">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Foie gras de canard mi-cuit</h3>
+                <p class="c-card-menu__subtitle">Et ses copeaux de truffe noire</p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox4"
+              aria-labelledby="chklabel4"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox4"></label>
+            <div class="c-card-menu__fake-label" id="chklabel4">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Foie gras de canard mi-cuit</h3>
+                <p class="c-card-menu__subtitle">Et ses copeaux de truffe noire</p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox5"
+              aria-labelledby="chklabel5"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox5"></label>
+            <div class="c-card-menu__fake-label" id="chklabel5">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Foie gras de canard mi-cuit</h3>
+                <p class="c-card-menu__subtitle">Et ses copeaux de truffe noire</p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="restaurant__group-menu" role="group" aria-labelledby="plats">
+          <h2 id="plats">PLATS</h2>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox10"
+              aria-labelledby="chklabel10"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox10"></label>
+            <div class="c-card-menu__fake-label" id="chklabel10">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Filet de bœuf aux herbes</h3>
+                <p class="c-card-menu__subtitle">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+                <p class="c-card-menu__price">40€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="c-card-menu">
+            <input
+              type="checkbox"
+              id="c-card-menu__checkbox11"
+              aria-labelledby="chklabel11"
+              class="visually-hidden"
+            />
+            <label for="c-card-menu__checkbox11"></label>
+            <div class="c-card-menu__fake-label" id="chklabel11">
+              <div class="c-card-menu__container">
+                <h3 class="c-card-menu__title">Parmentier de queue de bœuf</h3>
+                <p class="c-card-menu__subtitle">
+                  À la truffe noire sur sa purée de panais
+                </p>
+                <p class="c-card-menu__price">35€</p>
+              </div>
+              <div aria-hidden="true" class="c-card-menu__fake-checkbox">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding:30px">
+        <a href="#" class="c-button">Explorer nos restaurants</a>
+      </div>
+      <div style="padding:30px">
+        <button class="c-button">Commander</button>
+      </div>
+      
+      <div style="padding:30px">
+        <span class="c-badge">Nouveau</span>
+      </div>
+
+      <div class="container_fonctionnement">
+        <ol>
+          <li><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Choisissez un restaurant</li>
+          <li><i class="fa-solid fa-list-ul" aria-hidden="true"></i>Composez votre menu</li>
+          <li><i class="fa-solid fa-store" aria-hidden="true"></i>Dégustez au restaurant</li>
+        </ol> 
+      </div>
+
+      <div class="container_c-card">
+        <div class="c-card">
+            <span class="c-card__badge c-badge">
+                Nouveau
+            </span>
+            <img class="c-card__img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <div class="c-card__text">
+                <div class="c-card__text__container">
+                    <h3 class="c-card__text__title" id="c-card__text__title1">
+                        <a href="restaurants/La-palette-du-gout.html">La palette du goût</a>
+                    </h3>
+                    <p class="c-card__text__subtitle">Ménilmontant</p>
+                </div>
+                <div class="c-like">
+                    <input type="checkbox" id="like-button1" class="visually-hidden" aria-describedby="c-card__text__title1"/>
+                    <label for="like-button1">
+                      <span class="visually-hidden">Mettre en favoris</span> 
+                      <i class="fa-heart fa-regular" aria-hidden="true"></i>
+                      <i class="fa-heart fa-solid" aria-hidden="true"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="main-footer">
+        <h2 class="main-footer__title">ohmyfood</h2>
+        <ul class="main-footer__list">
+          <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"></i>Proposer un restaurant</a></li>
+          <li><a href="#"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>Devenir partenaire</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.tld">Contact</a></li>
+        </ul>
+      </div>
+  </body>
+</html>

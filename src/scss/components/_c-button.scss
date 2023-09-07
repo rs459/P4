@@ -1,0 +1,17 @@
+button, a {
+  &.c-button {
+      border-width: 0;
+      border-radius: 25px;
+      color: white;
+      padding: 13px 16px;
+      text-decoration: none;
+      background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    
+      &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+  
+}

@@ -1,0 +1,54 @@
+h1 {
+    font-family: Shrikhand;
+}
+
+.hero img {
+    height: 275px;
+    height: clamp(17.19rem, calc(14.25rem + 14.69vw), 23.94rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant {
+    position: relative;
+    background-color: var(--bg-color-secondary);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 31px;
+    padding-bottom: 40px;
+    margin-top: -40px;
+    max-width: 1055px;
+    margin-inline: auto;
+
+    &__intro {
+        padding-inline: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 655px) {
+            justify-content: center;
+            h1 {
+                margin-right: 24px;
+            }
+        }
+        & .c-like {
+            margin-right: 23px;
+        }
+    }
+
+    &__group-menu {
+        padding-inline: 13px;
+        margin-bottom: 40px;
+        max-width: 634px;
+        margin-inline: auto;
+    }
+
+    .c-button {
+        display: block;
+        margin-inline: auto;
+        padding-inline: 48px;
+    }
+}
+
